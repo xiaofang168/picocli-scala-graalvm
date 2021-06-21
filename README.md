@@ -14,7 +14,10 @@ Scala Picocli with GraalVM
 
 1. Build the project
   ```
-  $ sbt graalvm-native-image:packageBin
+  $ sbt
+  $ clean
+  $ compile
+  $ graalvm-native-image:packageBin
   ```
 2. Run the command
   ```

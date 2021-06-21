@@ -1,4 +1,4 @@
-package com.github.takezoe
+package com.fangj.picocli
 
 import java.io.File
 

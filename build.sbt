@@ -19,7 +19,7 @@ processAnnotations := {
   val classpath = ((products in Compile).value ++ ((dependencyClasspath in Compile).value.files)) mkString ":"
   val destinationDirectory = (classDirectory in Compile).value
   val processor = "picocli.codegen.aot.graalvm.processor.NativeImageConfigGeneratorProcessor"
-  val classesToProcess = Seq("com.github.takezoe.CheckSum") mkString " "
+  val classesToProcess = Seq("com.fangj.picocli.CheckSum") mkString " "
 
   val command = s"javac -cp $classpath -proc:only -processor $processor -XprintRounds -d $destinationDirectory $classesToProcess"
 
