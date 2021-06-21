@@ -21,7 +21,7 @@ Scala Picocli with GraalVM
   ```
 2. Run the command
   ```
-  $ ./target/graalvm-native-image/picocli-scala-graalvm
+  $ ./target/graalvm-native-image/picocli-scala-graalvm build.sbt -a SHA-1
   Missing required parameter: <file>
   Usage: checksum [-hV] [-a=<algorithm>] <file>
   Prints the checksum (MD5 by default) of a file to STDOUT.
